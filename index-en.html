@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Isaque Rodrigues - Portfolio</title>
+    
+    <!-- Google Fonts - Sora -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">IR</a>
+            <div class="d-flex align-items-center">
+                <button id="mobileLangToggle" class="btn me-2 d-lg-none" onclick="window.location.href='index.html'">
+                    <img src="assets/flag-br.png" alt="Português" style="width: 24px; height: auto;">
+                </button>
+                <button id="mobileThemeToggle" class="btn me-2 d-lg-none">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item">
+                        <button id="langToggle" class="btn me-2" onclick="window.location.href='index.html'">
+                            <img src="assets/flag-br.png" alt="Português" style="width: 24px; height: auto;">
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" data-aos="fade-up">
+        <div class="container">
+            <div class="hero-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h1>Isaque Rodrigues de Oliveira</h1>
+                        <h2><strong>Automation & Data Analysis Specialist</strong></h2>
+                        <div class="contact-info">
+                            
+                            <p><i class="fas fa-map-marker-alt"></i> Franco da Rocha, SP</p>
+                            <p><i class="fas fa-laptop"></i> Availability: Hybrid</p>
+                            <p><i class="fas fa-envelope"></i> isaque.fdr@gmail.com</p>
+                            <p><i class="fas fa-phone"></i> (11) 98900-2458</p>
+                            <p><i class="fab fa-github"></i> <a href="https://github.com/isaquewqi" target="_blank">github.com/isaquewqi</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="stats-container">
+                            <canvas id="skillsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a professional with experience in automation, data analysis, and paid traffic, passionate about optimizing processes and creating intelligent solutions. My journey began at Magazine Luiza, where I had my first contact with automation and data analysis, which sparked my interest in technology.</p>
+            <p>Since then, I have worked as a freelancer, developing task automation scripts, API integration bots, and interactive dashboards, always focused on improving operational efficiency and data-driven decision making. Additionally, I have solid experience with copywriting and paid traffic management, helping companies convert more and scale their businesses.</p>
+            <p>Currently, I am seeking opportunities to apply my technical knowledge in challenging projects, contribute with innovative solutions, and continue my journey of constant learning in the technology market.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Freelancer | Automation and Data Analysis</h3>
+                <div class="experience-meta">
+                    <span><i class="far fa-calendar-alt"></i> 2023 - Present</span>
+                    <span><i class="fas fa-laptop-house"></i> Remote</span>
+                </div>
+                <ul>
+                    <li>Companies needed to automate tasks and obtain data insights.</li>
+                    <li>Develop scripts and bots for automation, as well as data analysis and visualization.</li>
+                    <li>Creation of Telegram bots for automatic reposting, process automation with Python (Selenium, Pandas) and API integration (Meta Ads, Google Ads, Firebase). Development of interactive dashboards in Looker Studio and traffic analysis.</li>
+                    <li>40% reduction in operational time, improved data-driven decision making, and increased efficiency in advertising campaigns.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="badge">Python</span>
+                    <span class="badge">Selenium</span>
+                    <span class="badge">Pandas</span>
+                    <span class="badge">Firebase</span>
+                    <span class="badge">MongoDB</span>
+                    <span class="badge">Google Looker Studio</span>
+                    <span class="badge">BigQuery</span>
+                    <span class="badge">SQL</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Paid Traffic Manager & Copywriting</h3>
+                <div class="experience-meta">
+                    <span><i class="far fa-calendar-alt"></i> 2021 - 2023</span>
+                    <span><i class="fas fa-laptop-house"></i> Remote</span>
+                </div>
+                <ul>
+                    <li>Companies needed to optimize ads and improve conversions.</li>
+                    <li>Create highly persuasive campaigns and optimize paid traffic.</li>
+                    <li>Advanced copywriting strategies, A/B testing, UTM usage in Meta Ads, ROI analysis, and sales funnels.</li>
+                    <li>25% increase in conversion and improved traffic segmentation.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="badge">Meta Ads</span>
+                    <span class="badge">Google Ads</span>
+                    <span class="badge">Google Tag Manager</span>
+                    <span class="badge">UTM</span>
+                    <span class="badge">Persuasive Copywriting</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <h3>Junior Apprentice | Magazine Luiza</h3>
+                <div class="experience-meta">
+                    <span><i class="far fa-calendar-alt"></i> 2020 - 2021</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Louveira, SP</span>
+                </div>
+                <ul>
+                    <li>Operational processes required optimization and efficiency.</li>
+                    <li>Assist in automation and visualization of internal data.</li>
+                    <li>Development of automated report scripts, dashboards in Google Looker Studio and support to senior analyst.</li>
+                    <li>Better organization of logistics data and optimization of internal processes.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="badge">Google Looker Studio</span>
+                    <span class="badge">BigQuery</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">Report Automation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
+                    <div class="skill-items">
+                        <span class="badge">Python (Pandas, Selenium, FastAPI, Streamlit, LangChain)</span>
+                        <span class="badge">JavaScript (Node.js, Express)</span>
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-items">
+                        <span class="badge">SQL Server</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> Automation & Web Scraping</h3>
+                    <div class="skill-items">
+                        <span class="badge">Selenium</span>
+                        <span class="badge">Playwright</span>
+                        <span class="badge">BeautifulSoup</span>
+                        <span class="badge">APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Data Analysis & BI</h3>
+                    <div class="skill-items">
+                        <span class="badge">Pandas</span>
+                        <span class="badge">Looker Studio</span>
+                        <span class="badge">BigQuery</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-ad"></i> Marketing & Paid Traffic</h3>
+                    <div class="skill-items">
+                        <span class="badge">Meta Ads</span>
+                        <span class="badge">Google Ads</span>
+                        <span class="badge">Persuasive Copywriting</span>
+                        <span class="badge">Conversion Funnels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="education-item">
+                        <h3><i class="fas fa-graduation-cap"></i> Systems Development</h3>
+                        <p>SENAC (2017)</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="education-item">
+                        <h3><i class="fas fa-certificate"></i> Automation & Data Analysis with Python</h3>
+                        <p>Udemy (2024)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages">
+                <h3 class="mt-4">Languages</h3>
+                <div class="language-cards">
+                    <div class="language-card">
+                        <p><i class="fas fa-flag-usa"></i> English - C1</p>
+                    </div>
+                    <div class="language-card">
+                        <p><i class="fas fa-flag"></i> Portuguese - Native</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contact-whatsapp" class="hero-card">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1>Congratulations for making it this far!!!</h1>
+                <h2><strong>If you want to have more direct contact with me...</strong></h2>
+                <div class="contact-info">
+                </div>
+                <a href="https://wa.me/5511989002458" target="_blank" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i>
+                    Get in touch with me!
+                </a>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="stats-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/isaquewqi" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:isaque.fdr@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+5511989002458"><i class="fas fa-phone"></i></a>
+            </div>
+            <p>&copy; 2025 Isaque Rodrigues. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
