@@ -236,6 +236,27 @@ a {
     position: relative;
 }
 
+.portfolio-images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.portfolio-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover {
+    transform: translateY(-5px);
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
